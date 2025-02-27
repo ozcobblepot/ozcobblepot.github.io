@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUEDE BAG - Official Site | Air of Sophistication</title>
+    <title>Cart | Suede Bag Philippines</title>
     <link rel="icon" href="images/suedebagicon.png" type="image/png">
-    <link rel="stylesheet" href="styles(orig).css">
+    <link rel="stylesheet" href="mycart.css">
 </head>
 <body>
     <header>
@@ -31,13 +31,61 @@
     </header>
 
     <main>
-        <section class="hero-section">
-            <div class="image-scroll">
-                <img src="images/cover10.png" alt="First Image" class="hero-image">
-                <img src="images/cover6.png" alt="Second Image" class="hero-image">
-                <img src="images/cover 4.jpg" alt="First Image" class="hero-image">
-                <img src="images/cover9.jpeg" alt="Second Image" class="hero-image">
-                <img src="images/cover1.jpeg" alt="First Image" class="hero-image">
+
+        <section class="bags-category">
+            <h2>Shopping Bag</h2>
+            <p>
+                Crafted with elegance, designed for everyday elegance, where every suede bag tells a story of timeless style and sophistication.
+            </p>
+        </section>
+
+        <section class="cart-section">
+            <div class="cart-container">
+                <div class="cart-items">
+                    <h2>Item Selection</h2>
+                    <!-- Cart Item 1 -->
+                    <div class="cart-item">
+                        <img src="images/bag13.jpeg" alt="Leather Bag" class="cart-item-img">
+                        <div class="cart-item-details">
+                            <h3 class="product-name">Pioneer Compact Backpack</h3>
+                            <p class="product-price">₱1,800.00</p>
+                            <div class="product-quantity">
+                                <label for="quantity1">Quantity:</label>
+                                <input type="number" id="quantity1" name="quantity" value="1" min="1">
+                            </div>
+                        </div>
+                        <div class="cart-item-total">
+                            <p>₱1,800.00</p>
+                            <button class="remove-item-btn">Remove</button>
+                        </div>
+                    </div>
+                    <!-- Cart Item 2 -->
+                    <div class="cart-item">
+                        <img src="images/bag1.png" alt="Leather Bag" class="cart-item-img">
+                        <div class="cart-item-details">
+                            <h3 class="product-name">Suede Luxe Handbag</h3>
+                            <p class="product-price">₱1,450.00</p>
+                            <div class="product-quantity">
+                                <label for="quantity2">Quantity:</label>
+                                <input type="number" id="quantity2" name="quantity" value="1" min="1">
+                            </div>
+                        </div>
+                        <div class="cart-item-total">
+                            <p>₱1,450.00</p>
+                            <button class="remove-item-btn">Remove</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <p class="subtotal">Subtotal: <span>₱3,250.00</span></p>
+                    <p class="shipping">Shipping: <span>Free</span></p>
+                    <p class="taxes">Taxes: <span>₱450.00</span></p>
+                    <p class="total">Total: <span>₱3,700.00</span></p>
+                    <button class="update-cart-btn">Update Cart</button>
+                    <button class="checkout-btn">Proceed to Checkout</button>
+                </div>
             </div>
         </section>
 

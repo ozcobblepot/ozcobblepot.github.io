@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUEDE BAG - Official Site | Air of Sophistication</title>
+    <title>Sign In | Suede Bag Philippines</title>
     <link rel="icon" href="images/suedebagicon.png" type="image/png">
-    <link rel="stylesheet" href="styles(orig).css">
+    <link rel="stylesheet" href="signin.css">
 </head>
 <body>
     <header>
+      
         <div class="contact-link">
             <a href="contactus.html">+ Contact Us</a>
         </div>
@@ -18,8 +19,8 @@
                 <span class="country-name">Philippines</span>
             </a>
         </div>
-        
-        <div class="sign-in">
+        <!-- Minimalist Line-Only Sign-In Button -->
+        <div class="sign-in">   
             <a href="signin.html" class="sign-in-button">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" class="person-icon">
                     <circle cx="12" cy="8" r="4" fill="none" stroke="black" stroke-width="1.5"></circle>
@@ -29,17 +30,23 @@
             </a>
         </div>
     </header>
+    
+    
 
     <main>
-        <section class="hero-section">
-            <div class="image-scroll">
-                <img src="images/cover10.png" alt="First Image" class="hero-image">
-                <img src="images/cover6.png" alt="Second Image" class="hero-image">
-                <img src="images/cover 4.jpg" alt="First Image" class="hero-image">
-                <img src="images/cover9.jpeg" alt="Second Image" class="hero-image">
-                <img src="images/cover1.jpeg" alt="First Image" class="hero-image">
-            </div>
-        </section>
+        <div class="signin-container">
+            <h1 class="signin-title">Sign In</h1>
+            <form class="signin-form" action="#" method="post">
+                <label for="email" class="signin-label">Email</label>
+                <input type="email" id="email" name="email" class="signin-input" placeholder="Enter your email" required>
+
+                <label for="password" class="signin-label">Password</label>
+                <input type="password" id="password" name="password" class="signin-input" placeholder="Enter your password" required>
+
+                <button type="submit" class="signin-button">Sign In</button>
+                <p class="signup-link">Don't have an account? <a href="signup.html">Sign Up</a></p>
+            </form>
+        </div>
 
         <section class="info-section">
             <div class="info-category">

@@ -1,0 +1,54 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace; /* Fixed-width font for spacing */
+    background: radial-gradient(circle, #eafaf1, #cde0cc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  /* Container for the Poem */
+  .poem-container {
+    text-align: center;
+    color: #2e7d32;
+    width: 80%;
+  }
+  
+  /* Poem Tree Title */
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #1b5e20;
+    text-transform: uppercase;
+  }
+  
+  /* Poem Tree Styling */
+  .poem-tree {
+    font-size: 1.2em;
+    white-space: pre-wrap; /* Keep pre-defined spaces */
+    color: #2d3436;
+    line-height: 7px;
+    margin-bottom: 20px; /* Space between the poem and trunk */
+  }
+  
+  /* Tree Trunk Styling */
+  .trunk {
+    width: 20px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #6d4c41; /* Tree trunk color */
+  }
+  
+  .special {
+    margin-top: 10px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #b71c1c;
+  }
+
+  
+  

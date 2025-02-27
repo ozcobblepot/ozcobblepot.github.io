@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100vw;
+}
+
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1080;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    height: 70px;
+    background-color: white;
+    padding: 20px;
+}
+
+.sign-in {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sign-in-button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'STXihei', sans-serif;
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.person-icon {
+    margin-right: 5px;
+    display: block;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: auto;
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    width: 30px;
+    height: 10px;
+    position: relative;
+    margin-right: 50px;
+}
+
+.menu-text {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    text-decoration: none;
+    font-family: 'STXihei', sans-serif;
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.line {
+    width: 15px;
+    height: 1.5px;
+    background-color: black;
+}
+
+.contact-link {
+    margin-right: 20px;
+}
+
+.contact-link a {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    text-decoration: none;
+    font-family: 'STXihei', sans-serif;
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.company-name {
+    font-family: 'Addington CF';
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.country-name {
+    font-family: 'STXihei';
+    font-size: 10px;
+    font-weight: normal;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: -8px;
+}
+
+main {
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: black;
+}
+
+/* Styles for the banner image */
+.banner-container {
+    width: 100%; /* Full-width container */
+    height: 250px; /* Fixed height */
+    overflow: hidden; /* Hide overflow */
+    margin-bottom: 0px; /* Spacing after the banner */
+}
+
+.banner-image {
+    width: 100%; /* Image covers full width */
+    height: 100%; /* Stretches to container height */
+    object-fit: cover; /* Ensures the image fits proportionally */
+}
+
+.about-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column; /* Ensures vertical stacking */
+    align-items: center; /* Centers all child elements horizontally */
+}
+
+
+.about-section b {
+    font-size: 13px;
+}
+
+.separator {
+    border: none;
+    border-top: 1px solid black;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.about-section h2 {
+    font-family: 'STXihei';
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: black;
+    margin-bottom: 8px;
+}
+
+.about-section h3 {
+    font-family: 'STXihei';
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: black;
+    margin-bottom: 8px;
+}
+
+.about-section h1 {
+    font-family: 'STXihei';
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: black;
+    margin-bottom: 25px;
+}
+
+.about-section h2 {
+    text-decoration: none;
+    font-family: 'STXihei';
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: black;
+    text-align: center; /* Ensure centering */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove any unwanted padding */
+    width: 100%; /* Ensures the element takes full available width */
+}
+
+.about-section a {
+    text-align: center;
+    font-family: 'STXihei';
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: black;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.contact-us-link {
+    display: block;           /* Makes the <a> tag a block-level element */
+    text-align: center;       /* Centers the text inside the <a> tag */
+    margin: 20px 0;           /* Adds vertical margin for spacing */
+    padding: 10px;            /* Adds padding for better spacing */
+}
+
+.contact-us-link h5 {
+    margin: 0;                /* Removes any default margin */
+    padding: 0;               /* Removes any unwanted padding */
+    text-align: center;       /* Centers the text in the h2 element */
+}
+
+.about-section .contact-us-link a:hover {
+    text-decoration: none !important;
+}
+
+.about-section h5 {
+    font-family: 'STXihei';
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: black;
+}
+
+.about-section p {
+    font-size: 13px;
+    line-height: 2;
+    margin-bottom: 15px;
+    font-family: 'STXihei';
+    text-align: justify;
+}
+
+.info-section {
+    display: flex;
+    justify-content: space-between; /* Spread items evenly */
+    align-items: flex-start;
+    padding: 10px;
+    background-color: white;
+    font-family: 'STXihei', sans-serif;
+    color: black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 100%;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-top: 2px solid #ddd; /* Optional for separation */
+}
+
+.info-category {
+    width: 22%;
+    margin: 0 20px;
+}
+
+.info-category.legal-info {
+    width: 100%; /* Make the legal info take full width */
+    text-align: center;
+    margin-top: 40px; /* Add space from other sections */
+}
+
+.info-title {
+    font-size: 13px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 12px;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+}
+
+.info-list li {
+    margin-bottom: 15px;
+}
+
+.info-list a {
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+    font-weight: normal;
+    transition: color 0.3s ease;
+}
+
+.info-list a:hover {
+    color: #b25e5e; /* Highlight color */
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+    .info-category {
+        width: 45%; /* Two columns on smaller screens */
+        margin-bottom: 30px;
+    }
+
+    .info-category.legal-info {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-category {
+        width: 100%; /* Full width for very small screens */
+    }
+}
+
+
+footer {
+    background-color: black;
+    text-align: center;
+}
+
+.footer-logo {
+    margin-top: 8px;
+    text-align: center;
+}
+
+.footer-logo .company-name {
+    font-family: 'Addington CF';
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.footer-logo .country-name {
+    font-family: 'STXihei';
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: -8px; /* Moves the country name closer to the company name */
+    display: block;
+    border-top: 10px;
+    padding-bottom: 13px;
+
+}
+
+.footer-logo .logo-link {
+    text-decoration: none;
+    color: inherit;
+}

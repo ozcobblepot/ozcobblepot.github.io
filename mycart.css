@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100vw;
+}
+
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1080;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    height: 70px;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Sign-In Button (Minimalist Line Style) */
+.sign-in {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sign-in-button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'STXihei', sans-serif;
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.person-icon {
+    margin-right: 5px;
+    display: block;
+}
+
+/* Cart and Order Styles */
+.cart-section {
+    font-family: 'STXihei';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cart-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.cart-items {
+    width: 70%;
+}
+
+.cart-items h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 20px;
+}
+
+.cart-item-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.product-price {
+    font-size: 16px;
+    color: #777;
+}
+
+.product-quantity {
+    margin-top: 10px;
+}
+
+.product-quantity label {
+    font-size: 14px;
+    color: #777;
+}
+
+.product-quantity input {
+    width: 50px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.cart-item-total {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.cart-item-total p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.remove-item-btn {
+    background-color: transparent;
+    border: none;
+    color: #e60000;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    font-family: 'STXihei';
+}
+
+/* Order Summary Styles */
+.order-summary {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'STXihei';
+    text-transform: uppercase;
+}
+
+.order-summary h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.order-summary p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.order-summary .subtotal,
+.order-summary .shipping,
+.order-summary .taxes,
+.order-summary .total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.order-summary .total span {
+    font-size: 18px;
+    color: black;
+}
+
+.update-cart-btn, .checkout-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    font-family: 'STXihei';
+    transition: background-color 0.3s ease;
+}
+
+.update-cart-btn:hover, .checkout-btn:hover {
+    background-color: #353333;
+}
+
+.bags-category {
+    font-family: 'STXihei';
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.bags-category h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.bags-category p {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: auto;
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    width: 30px;
+    height: 10px;
+    position: relative;
+    margin-right: 50px;
+}
+
+.menu-text {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    text-decoration: none;
+    font-family: 'STXihei', sans-serif;
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.line {
+    width: 15px;
+    height: 1.5px;
+    background-color: black;
+}
+
+.contact-link {
+    margin-right: 20px;
+}
+
+.contact-link a {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    text-decoration: none;
+    font-family: 'STXihei', sans-serif;
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.company-name {
+    font-family: 'Addington CF';
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.country-name {
+    font-family: 'STXihei';
+    font-size: 10px;
+    font-weight: normal;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: -8px;
+}
+
+main {
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: black;
+}
+
+.about-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h1, .about-section h2 {
+    font-family: 'STXihei', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.info-section {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    background-color: #f9f9f9;
+    font-family: 'STXihei';
+    color: black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.info-category {
+    width: 22%;
+    margin: 0 20px;
+}
+
+.info-title {
+    font-size: 13px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 12px;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+}
+
+.info-list li {
+    margin-bottom: 15px;
+}
+
+.info-list a {
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+    font-weight: normal;
+    transition: color 0.3s ease;
+}
+
+.info-list a:hover {
+    color: #b25e5e; /* Highlight color */
+}
+
+@media (max-width: 768px) {
+    .info-category {
+        width: 45%; /* Two columns on smaller screens */
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-category {
+        width: 100%; /* Full-width on very small screens */
+    }
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+}
+
+.footer-logo {
+    margin-top: 8px;
+    text-align: center;
+}
+
+.footer-logo .company-name {
+    font-family: 'Addington CF';
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.footer-logo .country-name {
+    font-family: 'STXihei';
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: -8px;
+    display: block;
+    padding-bottom: 13px;
+}
+
+.footer-logo .logo-link {
+    text-decoration: none;
+    color: inherit;
+}

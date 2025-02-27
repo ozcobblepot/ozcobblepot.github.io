@@ -1,0 +1,54 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #e8f5e9, #c8e6c9);
+  }
+  
+  /* Tree Container */
+  .tree-container {
+    position: relative;
+    width: 400px;
+    height: 600px;
+  }
+  
+  /* Leaves (Poem text) */
+  .leaves {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 320px;
+    height: 450px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: radial-gradient(circle, #81c784, #66bb6a, #388e3c);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .leaf {
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #2e7d32;
+    margin: 5px;
+    line-height: 1.5;
+  }
+  
+  /* Trunk */
+  .trunk {
+    width: 50px;
+    height: 150px;
+    margin: -10px auto 0;
+    background: linear-gradient(to bottom, #6b4f39, #3e2b1f);
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  

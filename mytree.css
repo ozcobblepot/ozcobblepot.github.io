@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f4f4f4;
+}
+
+/* Tree Container */
+.tree-container {
+  text-align: center;
+  position: relative;
+  width: 400px;
+  height: 600px;
+}
+
+/* Words forming the tree */
+.tree {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 300px;
+  height: 450px;
+  margin: 0 auto;
+  position: relative;
+  color: #2e7d32;
+}
+
+.word {
+  margin: 5px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Trunk */
+.trunk {
+  width: 50px;
+  height: 150px;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #6b4f39, #3e2b1f);
+  border-radius: 10px;
+}
